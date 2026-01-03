@@ -8,7 +8,12 @@ class Solution(object):
             for i in s:
                 if i in char:
                     char.clear()
-…        for i in res:
+                    val = ""
+                char.add(i)
+                val += i
+                res.append(val)
+        count = 0
+        for i in res:
             if len(i) > count:
                 count = len(i)
         return count
